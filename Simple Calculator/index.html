@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>Simple Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body> 
+
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <div class="dmode">
+    <button type="button" class="btn btn-secondary btn-sm" onclick="enableDarkMode()">Dark Mode</button>
+    </div>
+
+    <br>
+        <form name="formcalc">
+        <div class="row">
+        <div class="col">
+        <input type="number" class="form-control" id="num1" placeholder="First Number" name="num1">
+        </div>
+        <div class="col">
+        <input type="number" class="form-control" id="num2" placeholder="Second Number" name="num2">
+        </div>
+        </div>
+        </form>
+    <br>
+
+    <div class="center">
+        <button type="button" class="btn btn-outline-info mr-3 btn-lg" id="add">+</button>
+        <button type="button" class="btn btn-outline-info mr-3 btn-lg" id="sub">-</button>
+        <button type="button" class="btn btn-outline-info mr-3 btn-lg" id="mul">*</button>
+        <button type="button" class="btn btn-outline-info mr-3 btn-lg" id="div">/</button>
+    </div>
+    
+    <br>
+    
+    <div class ="res">
+    <input type="number" class="form-control" readonly id="result" placeholder="Result:">
+    </div>
+    
+    <script src = "simpleCalculator.js"></script> 
+
+    </body>
+    </html>
